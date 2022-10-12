@@ -1,0 +1,26 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Navbar from '../../../components/Navbar.astro';
+---
+
+<head>
+  <link rel="stylesheet" href="/css/todolist.css">
+  <script defer is:inline src="/js/todolist.js"></script>
+</head>
+
+
+<Layout title="Portfolio Joris Villet projet todolist">
+  <Navbar />
+
+  <div class="bloc-todo">
+    <h1 class="title">Liste à faire</h1>
+    <label>
+      <input id="todolist" type="text" placeholder="Ajoutez une tâche" autocomplete="off">
+      <i class="fas fa-plus-circle icon-add" title="Astuce tapez entrer pour ajouter une liste rapidement"></i>
+    </label>
+    <p class="displayDate"></p>
+    <div class="displayTodolist">
+      <!-- ICI LES NOUVELLES LISTES -->
+    </div>
+  </div>
+</Layout>

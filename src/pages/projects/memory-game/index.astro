@@ -1,0 +1,51 @@
+---
+import Navbar from '../../../components/Navbar.astro';
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<head>
+  <link rel="stylesheet" href="/css/memoryGame.css">
+  <script defer is:inline src="/js/memoryGame.js"></script>
+</head>
+
+<Layout title="Portfolio Joris Villet projet memory game">
+  <Navbar />
+
+  <div class="container">
+    <h1 class="title-game">My memory game</h1>
+    <div class="grid">
+       <div class="row">
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+       </div>
+       <div class="row">
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+       </div>
+       <div class="row">
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+         <div class="cell"></div>
+       </div>
+     </div>
+     <div class="container-btn">
+       <button id="play">jouez</button>
+       <button id="validation">Validez</button>
+     </div>
+     <div id="result"></div>
+  </div>
+  
+</Layout>
+
+

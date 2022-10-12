@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: url('https://images.wallpaperscraft.com/image/single/flower_yellow_delicate_138583_1920x1080.jpg') no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+
+
+
+.bubble {
+  cursor: crosshair;
+  height: var(--heightSize);
+  width: var(--widthSize);
+  background: url('../img/bubble.png');
+  background-size: var(--size);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation-duration: var(--speed);
+  animation-name: bubbleFlight;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+}
+
+.addBubble {
+  padding: 0.5rem 3rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+  position: absolute;
+  top: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  font-style: italic;
+  color: rgb(97, 40, 14);
+  background: rgb(250, 207, 14);
+  cursor: pointer;
+}
+
+/* .bubble {
+  --heightSize: 0;
+  --widthSize: 0;
+  --speed: 10s;
+  cursor: crosshair;
+  height: var(--heightSize);
+  width: var(--widthSize);
+  border: 1px solid #000;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  animation-duration: var(--speed);
+  animation-name: bubbleFlight;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+} */
+
+@keyframes bubbleFlight {
+  from {
+     bottom: 0;
+     left: var(--left);
+  }
+  to {
+     bottom: var(--bottom);
+     left: var(--left);
+  }
+  
+
+}

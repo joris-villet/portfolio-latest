@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+  background: #f8f8f8;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.container-btn {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+}
+
+.title-game {
+  margin: 2rem auto;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.grid {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  border: 1px solid #000;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: orange;
+  border: 1px solid #000;
+  /*animation: .1s linear 1s hidden;*/
+}
+
+#result {
+  margin: 2rem auto;
+  font-size: 1rem;
+}
+
+.isFocus {
+  animation: .3s linear 0s zoom;
+}
+
+@keyframes zoom {
+  from {
+    opacity: 0;
+    font-size: 2rem;
+  }
+  to {
+    opacity: 1;
+    font-size: 1rem;
+  }
+}
+
+.bg-color {
+  background: red;
+}
+
+.cellChosen {
+  background: orange;
+}
+
+#play {
+  opacity: 0;
+  transition: .2s;
+  background: #fff;
+  display: block;
+  border: none;
+  border-radius: 1px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+}
+
+
+#validation {
+  opacity: 0;
+  transition: .2s;
+  display: block;
+  background: #fff;
+  border: none;
+  border-radius: 1px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  padding: 0.5rem 2rem;
+}

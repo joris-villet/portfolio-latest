@@ -1,0 +1,51 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Navbar from '../../../components/Navbar.astro';
+---
+
+<head>
+  <link rel="stylesheet" href="/css/calculatrice.css">
+  <script defer is:inline src="/js/calculatrice.js"></script>
+</head>
+
+
+<Layout title="Portfolio Joris Villet projet calculatrice">
+  <Navbar />
+
+
+  <div id="app">
+    <div class="calculator">
+      <input class="screen" type="text" name="screen" value="0" disabled>
+      <table>
+        <tr>
+          <td onclick="calculer('ch', '7')">7</td>
+          <td onclick="calculer('ch', '8')">8</td>
+          <td onclick="calculer('ch', '9')">9</td>
+          <td onclick="calculer('op', 'x')">x</td>
+        </tr>
+        <tr>
+          <td onclick="calculer('ch', '4')">4</td>
+          <td onclick="calculer('ch', '5')">5</td>
+          <td onclick="calculer('ch', '6')">6</td>
+          <td onclick="calculer('op', '-')">-</td>
+        </tr>
+        <tr>
+          <td onclick="calculer('ch', '1')">1</td>
+          <td onclick="calculer('ch', '2')">2</td>
+          <td onclick="calculer('ch', '3')">3</td>
+          <td onclick="calculer('op', '+')">+</td>
+        </tr>
+        <tr>
+          <td colspan="2"onclick="calculer('ch', '0')">0</td>
+          <td onclick="calculer('spe', '.')">.</td>
+          <td onclick="calculer('op', '/')">/</td>
+        </tr>
+        <tr>
+          <td colspan="2" onclick="calculer('spe', 'CE')">CE</td>
+          <td colspan="2" onclick="calculer('equal', '=')">=</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+</Layout>

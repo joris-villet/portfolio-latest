@@ -1,0 +1,24 @@
+---
+export interface Props {
+  className: string;
+  url: string;
+}
+
+const { className, url } =  Astro.props;
+---
+
+
+<a href={url}>
+  <section class={`${className} container`}>
+    <slot />
+  </section>
+</a>
+
+
+
+<style>
+  .container {
+    background: rgb(248, 195, 195);
+    height: 700px;
+  }
+</style>
