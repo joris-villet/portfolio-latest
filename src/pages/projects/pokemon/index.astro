@@ -1,0 +1,39 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Navbar from '../../../components/Navbar.astro';
+import V_Navbar from '../../../components/vue/V_Navbar.vue';
+---
+
+<Layout title="Portfolio Joris Villet projet pokemon">
+  <Navbar />
+
+  <div id="app">
+    <header class="header">
+      <V_Navbar />
+    </header>
+  </div>
+  
+</Layout>
+
+
+<style lang="scss">
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+  }
+    
+  .header {
+    background: crimson;
+    height: 250px;
+    max-width: 100%;
+    border-bottom: 15px solid rgb(39, 34, 34);
+  }
+  </style>

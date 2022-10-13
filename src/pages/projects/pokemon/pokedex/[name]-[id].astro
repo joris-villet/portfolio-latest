@@ -1,0 +1,17 @@
+---
+const { name, id } = Astro.params;
+
+export function getStaticPaths() {
+  return [{
+    params: 
+      {
+        name: 'bulbizarre',
+        id: "1"
+      }
+    }];
+}
+---
+
+<h1>
+  pokemon { name } { id }
+</h1>

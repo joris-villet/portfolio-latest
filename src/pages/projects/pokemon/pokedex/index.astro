@@ -1,0 +1,22 @@
+---
+import PokArticle from '../../../../components/vue/PokArticle.vue';
+import V_Navbar from '../../../../components/vue/V_Navbar.vue';
+---
+
+<div class="pokedex">
+  <V_Navbar />
+  <h1 class="title">Liste des pokemons</h1>
+  <PokArticle client:load />
+</div>
+
+
+<style>
+
+  .title {
+    margin: 3rem auto;
+  }
+
+  .header {
+    height: 100px;
+  }
+  </style>
